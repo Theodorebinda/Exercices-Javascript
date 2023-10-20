@@ -72,13 +72,29 @@
 // Si le nombre myNumber est inférieur au nombre misteryNumber, on affiche +
 // Sinon on affiche -
 
-let misteryNumber = 0;
-let   myNumber = 0;
-if(misteryNumber === myNumber){
-    return Congratulation;
-} else if(myNumber < misteryNumber) {
-    return "+";
+/*let misteryNumber = 4;
+let myNumber = 45;
+console.log("Congratulation!")
+myNumber < misteryNumber ? console.log("+") : console,log("-");*/
+
+// Ex4 Create Function `findLargest()` finds the largest of three numbers.
+
+// function findLargest(){
+
+// }
+
+/*Ex5 "Create which Check if a triangle is equilateral, scalene, or isosceles
+Function `findTriangleType()` finds the type of the triangle for given side values "*/
+
+
+function findTriangleType( x, y, z){
+    if(x === y && y === z ){
+        return console.log("C'est un triangle Equilateral")
+    } 
+    else if( x !== y && y !== z && z !== x ){
+        return console.log("C'est un triangle Scalene")
+        } else{
+        return console.log("C'est un triangle isosceles")
+        }
 }
-else {
-    return"-"
-};
+findTriangleType(7,7,7)
