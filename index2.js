@@ -72,22 +72,21 @@
 // Si le nombre myNumber est inférieur au nombre misteryNumber, on affiche +
 // Sinon on affiche -
 
-/*let misteryNumber = 4;
+let misteryNumber = 4;
 let myNumber = 45;
-console.log("Congratulation!")
-myNumber < misteryNumber ? console.log("+") : console,log("-");*/
 
+const message = myNumber === misteryNumber ? console.log("Congratulation!"): myNumber < misteryNumber ? console.log("+")? : myNumber > misteryNumber ?console,log("-"): "rien"
+console.log(message);
 // Ex4 Create Function `findLargest()` finds the largest of three numbers.
 
 // function findLargest(){
 
 // }
-
 /*Ex5 "Create which Check if a triangle is equilateral, scalene, or isosceles
 Function `findTriangleType()` finds the type of the triangle for given side values "*/
 
 
-function findTriangleType( x, y, z){
+/*function findTriangleType( x, y, z){
     if(x === y && y === z ){
         return console.log("C'est un triangle Equilateral")
     } 
@@ -97,4 +96,31 @@ function findTriangleType( x, y, z){
         return console.log("C'est un triangle isosceles")
         }
 }
-findTriangleType(7,7,7)
+findTriangleType(7,7,7)*/
+
+/*Ex6 "Create `evalNumbers()` prints the result after evaluating arithmetic operations between two numbers of addition, multiplication, division, and modulus in JavaScript.
+Print result of num1+num2 if operation is “add”
+Print result of num1-num2 if operation is “subtract”
+Print result of num1*num2 if operation is “multiply”
+Print result of num1/num2 if operation is “divide”
+Print result of num1%num2 if operation is “modulus”
+Else print “Invalid operation”"*/
+
+// function evalNumbers(a, b){
+//     let result;
+//     if(a + b){
+//         console.log("add");
+//     } else if (a - b) {
+//         console.log("subtract");
+//     } else if( a * b) {
+//         console.log("multiply");
+//     } else if (a / b ){
+//         console.log("divide");
+//     } else if (a % b){
+//         console.log("modulus");
+//     } else {
+//         console.log("invalid operation");
+
+//     }
+// }
+// evalNumbers(a,b)
