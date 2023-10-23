@@ -99,4 +99,51 @@
     
 //     return largest;
 //   }
+// Ex7 "Create `evalNumbers()` prints the result after evaluating arithmetic operations between two numbers of addition, multiplication, division, and modulus in JavaScript.
+// Print result of num1+num2 if operation is “add”
+// Print result of num1-num2 if operation is “subtract”
+// Print result of num1*num2 if operation is “multiply”
+// Print result of num1/num2 if operation is “divide”
+// Print result of num1%num2 if operation is “modulus”
+// Else print “Invalid operation”"
 
+// function evalNumbers(num1, num2, operation) {
+//     let result;
+  
+//     switch (operation) {
+//       case "add":
+//         result = num1 + num2;
+//         break;
+//       case "subtract":
+//         result = num1 - num2;
+//         break;
+//       case "multiply":
+//         result = num1 * num2;
+//         break;
+//       case "divide":
+//         result = num1 / num2;
+//         break;
+//       case "modulus":
+//         result = num1 % num2;
+//         break;
+//       default:
+//         console.log("Opération non valide");
+//         return;
+//     }
+  
+//     console.log(result);
+//   }
+// Ex8 "Create Function `checkLeapYear()` find if the given year is a leap year 
+// If year is divisble by 4 and not divisble by 100 then print “leap year”.
+// Or if year is divisible by 400 then print “leap year”.
+// Else print “not a leap year”."
+  
+function checkLeapYear(year){
+    if((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        console.log("Leep Year");
+    } else{
+        console.log("not a Leap year");
+    }
+
+}
+checkLeapYear(2200)
