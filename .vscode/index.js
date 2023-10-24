@@ -24,6 +24,3 @@
 // y = x;
 // x = z;"
 
-
-
-// console.log(a);
