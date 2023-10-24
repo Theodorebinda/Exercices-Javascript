@@ -138,12 +138,33 @@
 // Or if year is divisible by 400 then print “leap year”.
 // Else print “not a leap year”."
   
-function checkLeapYear(year){
-    if((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-        console.log("Leep Year");
-    } else{
-        console.log("not a Leap year");
-    }
+// function checkLeapYear(year){
+//     if((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+//         console.log("Leep Year");
+//     } else{
+//         console.log("not a Leap year");
+//     }
 
-}
-checkLeapYear(2200)
+// }
+// checkLeapYear(2200)
+// Ex9  "Function `findDaysInMonth()` finds the number of days in a given month of a year.
+// If month is outside the range of 1 and 12 print “Invalid month”.
+// If month is equal to 2 ie, February print “29 days” if leap year else print “28 days” 
+// .Else if month is equal to 4, 6, 9 or 11 print “30 days”.
+// Else print “31 days”."
+
+function findDaysInMonth(month, year) {
+    if (month < 1 || month > 12) {
+      console.log("Invalid month");
+    } else if (month === 2) {
+      if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        console.log("29 days");
+      } else {
+        console.log("28 days");
+      }
+    } else if (month === 4 || month === 6 || month === 9 || month === 11) {
+      console.log("30 days");
+    } else {
+      console.log("31 days");
+    }
+  }
