@@ -168,3 +168,4 @@ function findDaysInMonth(month, year) {
       console.log("31 days");
     }
   }
+  findDaysInMonth(2, 2020);
