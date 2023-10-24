@@ -169,3 +169,4 @@ function findDaysInMonth(month, year) {
     }
   }
   findDaysInMonth(2, 2020);
+  findDaysInMonth(2, 2021); // Output: "28 days"
