@@ -171,3 +171,4 @@ function findDaysInMonth(month, year) {
   findDaysInMonth(2, 2020);
   findDaysInMonth(2, 2021); // Output: "28 days"
   findDaysInMonth(4, 2023); // Output: "30 days"
+  findDaysInMonth(13, 2023); // Output: "Invalid month"
