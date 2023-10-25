@@ -8,11 +8,15 @@
 //     }
 //  }
  
-//  verifTableau(["salut"]);
+//  verifTableau("salut");
 
 // Ex2 Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.
-// function getFistElemArr(n){
-//     let arr = [];
-//     if
+function getFistElemArr(n){
+    if(Array.isArray(n)){
+        console.log(n[0]);
+    } else{
+        console.log("ceci n'est un tableau");
+    }
 
-// }
+}
+getFistElemArr(["Theo",5,6])

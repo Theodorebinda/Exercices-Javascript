@@ -153,22 +153,23 @@
 // .Else if month is equal to 4, 6, 9 or 11 print “30 days”.
 // Else print “31 days”."
 
-function findDaysInMonth(month, year) {
-    if (month < 1 || month > 12) {
-      console.log("Invalid month");
-    } else if (month === 2) {
-      if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-        console.log("29 days");
-      } else {
-        console.log("28 days");
-      }
-    } else if (month === 4 || month === 6 || month === 9 || month === 11) {
-      console.log("30 days");
-    } else {
-      console.log("31 days");
-    }
-  }
-  findDaysInMonth(2, 2020);
-  findDaysInMonth(2, 2021); // Output: "28 days"
-  findDaysInMonth(4, 2023); // Output: "30 days"
-  findDaysInMonth(13, 2023); // Output: "Invalid month"
+// function findDaysInMonth(month, year) {
+//     if (month < 1 || month > 12) {
+//       console.log("Invalid month");
+//     } else if (month === 2) {
+//       if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+//         console.log("29 days");
+//       } else {
+//         console.log("28 days");
+//       }
+//     } else if (month === 4 || month === 6 || month === 9 || month === 11) {
+//       console.log("30 days");
+//     } else {
+//       console.log("31 days");
+//     }
+//   }
+//   findDaysInMonth(2, 2020);
+//   findDaysInMonth(2, 2021); // Output: "28 days"
+//   findDaysInMonth(4, 2023); // Output: "30 days"
+//   findDaysInMonth(13, 2023); // Output: "Invalid month"
+
