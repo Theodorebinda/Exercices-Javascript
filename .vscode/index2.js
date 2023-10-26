@@ -1,4 +1,4 @@
-// Exercices Partie2
+// Exercices Sur les Conditions
 // let a = 0, b = 1, c = "1";
 
 //   if(a === 0){
