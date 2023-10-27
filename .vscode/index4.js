@@ -88,53 +88,66 @@
 // Bonus: Make the functions take arguments that increase or decrease arbitrary amounts
 // Bonus: Make the functions as arbitrary as cats are - sometimes make it so the cat doesn't want to be petted.
 
-const cat = {
-  tiredness : 9,
-  hunger : 5,
-  lonliness : 0,
-  happiness : 0,
+// const cat = {
+//   tiredness : 9,
+//   hunger : 5,
+//   lonliness : 0,
+//   happiness : 0,
 
-  sleep : function(){
-      this.tiredness -= 1
-  },
-  eat : function(){
-      this.hunger -= 1
-  },
-  pet : function(){
-      this.lonliness += 1
-  },
-  handelHappiness : function(){
-      let counter = 0;
-      if(this.tiredness === 0){
-          counter++;
-      };
-      if(this.hunger === 0){
-          counter++;
-      };
-      if(this.lonliness > 0 ){
-          counter++;
-      };
-      this.happiness += counter
+//   sleep : function(){
+//       this.tiredness -= 1
+//   },
+//   eat : function(){
+//       this.hunger -= 1
+//   },
+//   pet : function(){
+//       this.lonliness += 1
+//   },
+//   handelHappiness : function(){
+//       let counter = 0;
+//       if(this.tiredness === 0){
+//           counter++;
+//       };
+//       if(this.hunger === 0){
+//           counter++;
+//       };
+//       if(this.lonliness > 0 ){
+//           counter++;
+//       };
+//       this.happiness += counter
 
-  }
+//   }
+// };
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+
+// cat.eat();
+// cat.eat();
+// cat.eat();
+
+// cat.eat();
+// cat.eat();
+// cat.pet();
+// cat.pet();
+// cat.pet();
+// cat.handelHappiness();
+// console.log(cat)
+// Ex6 The Recipe Card 
+// Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings). On separate lines (one console.log statement for each), log the recipe information so it looks like: Mole Serves: 2 Ingredients: cinnamon cumin cocoa
+// Création de l'objet recette
+let recette = {
+  titre: "Mole",
+  portions: 2,
+  ingredients: ["cannelle", "cumin", "cacao"]
 };
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
 
-cat.eat();
-cat.eat();
-cat.eat();
-
-cat.eat();
-cat.eat();
-cat.pet();
-cat.pet();
-cat.pet();
-cat.handelHappiness();
-console.log(cat)
+// Affichage des informations de la recette
+console.log(recette.titre);
+console.log("Portions : " + recette.portions);
+console.log("Ingrédients : " + recette.ingredients.join(" "));
