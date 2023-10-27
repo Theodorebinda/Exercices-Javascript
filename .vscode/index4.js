@@ -6,23 +6,23 @@
 // sclass : "VI",
 // rollno : 12 };
 
-var étudiant = {
-    nom: "David Rayy",
-    classe: "VI",
-    numéroDeRole: 12
-  };
-  console.log("Objet avant suppression :", étudiant);
-  delete étudiant["numéro de rôle"];
-  delete étudiant["nom"];
-  console.log("Objet après suppression :", étudiant);
+// var étudiant = {
+//     nom: "David Rayy",
+//     classe: "VI",
+//     numéroDeRole: 12
+//   };
+//   console.log("Objet avant suppression :", étudiant);
+//   delete étudiant["numéro de rôle"];
+//   delete étudiant["nom"];
+//   console.log("Objet après suppression :", étudiant);
    
 
 
 //   const jeremieMengi = {
-//     name: "Monica",
+//     name: "Theodore",
 //     age: 25,
-//     height: "165 cm",
-//     hairColor: "brown",
+//     height: "169 cm",
+//     hairColor: "black",
 //     eyeColor: "green",
 //     colorSkin : "black"
 //   };
