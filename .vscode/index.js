@@ -26,7 +26,18 @@
 
 // Ex6 Define a function hello that returns 'Hello world!'.
 
-function hello(){
-    return console.log("Hello word!");
+// function hello(){
+//     return console.log("Hello word!");
+// }
+// hello()
+
+// Ex7 Define two functions. The first function a should return 'Hello a!' and the second function b should return 'Hello b!'.
+
+function a(){
+    return console.log("Hello a!");
+};
+function b(){
+    return console.log("Hello b!");
 }
-hello()
+a()
+b()
