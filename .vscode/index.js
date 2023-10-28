@@ -24,3 +24,9 @@
 // y = x;
 // x = z;"
 
+// Ex6 Define a function hello that returns 'Hello world!'.
+
+function hello(){
+    return console.log("Hello word!");
+}
+hello()
