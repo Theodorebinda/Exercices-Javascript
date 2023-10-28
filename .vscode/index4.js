@@ -143,13 +143,13 @@
 // Ex6 The Recipe Card 
 // Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings). On separate lines (one console.log statement for each), log the recipe information so it looks like: Mole Serves: 2 Ingredients: cinnamon cumin cocoa
 // Création de l'objet recette
-let recette = {
-  titre: "Mole",
-  portions: 2,
-  ingredients: ["cannelle", "cumin", "cacao"]
-};
+// let recette = {
+//   titre: "Mole",
+//   portions: 2,
+//   ingredients: ["cannelle", "cumin", "cacao"]
+// };
 
-// Affichage des informations de la recette
-console.log(recette.titre);
-console.log("Portions : " + recette.portions);
-console.log("Ingrédients : " + recette.ingredients.join(" "));
+// // Affichage des informations de la recette
+// console.log(recette.titre);
+// console.log("Portions : " + recette.portions);
+// console.log("Ingrédients : " + recette.ingredients.join(" "));

@@ -33,11 +33,19 @@
 
 // Ex7 Define two functions. The first function a should return 'Hello a!' and the second function b should return 'Hello b!'.
 
-function a(){
-    return console.log("Hello a!");
-};
-function b(){
-    return console.log("Hello b!");
+// function a(){
+//     return console.log("Hello a!");
+// };
+// function b(){
+//     return console.log("Hello b!");
+// }
+// a()
+// b()
+
+// Ex8 Define a function greet returning the value  'Haydo!'   Declare a variable salutation Call the function greet and assign the result of the call to the variable salutation.
+
+function greet(){
+    return "Haydo";
 }
-a()
-b()
+let salutation = greet();
+console.log(salutation);
