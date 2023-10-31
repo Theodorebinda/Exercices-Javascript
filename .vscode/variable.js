@@ -24,3 +24,38 @@
 // y = x;
 // x = z;"
 
+// Ex6 Define a function hello that returns 'Hello world!'.
+
+// function hello(){
+//     return console.log("Hello word!");
+// }
+// hello()
+
+// Ex7 Define two functions. The first function a should return 'Hello a!' and the second function b should return 'Hello b!'.
+
+// function a(){
+//     return console.log("Hello a!");
+// };
+// function b(){
+//     return console.log("Hello b!");
+// }
+// a()
+// b()
+
+// Ex8 Define a function greet returning the value  'Haydo!'   Declare a variable salutation Call the function greet and assign the result of the call to the variable salutation.
+
+// function greet(){ 
+//     return "Haydo";
+// }
+// let salutation = greet();
+// console.log(salutation);
+
+// Ex9 Write a function echo that also returns the passed parameter. echo('Greta') should return 'Greta' and echo('CO2') should return 'CO2'
+
+function echo(a) {
+    return a;
+}
+
+
+console.log(echo("C02"));
+console.log(echo("Greet"));
