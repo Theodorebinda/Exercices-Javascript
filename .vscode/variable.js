@@ -52,10 +52,10 @@
 
 // Ex9 Write a function echo that also returns the passed parameter. echo('Greta') should return 'Greta' and echo('CO2') should return 'CO2'
 
-function echo(a) {
-    return a;
-}
+// function echo(a) {
+//     return a;
+// }
 
 
-console.log(echo("C02"));
-console.log(echo("Greet"));
+// console.log(echo("C02"));
+// console.log(echo("Greet"));
