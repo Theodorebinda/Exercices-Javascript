@@ -24,7 +24,7 @@ cinquiemeBloc.innerHTML = "Cinquieme  Parties <br> sur index.js";
 
 const fruitList = ["pomme", "banane", "tomate", "mangue"];
 const ul = document.querySelector("#list");
-console.log(ul);
+// console.log(ul);
 
 fruitList.forEach(fruit => {
     const li = document.createElement("li")
@@ -46,14 +46,49 @@ img.src = imageSrc
 
 
 logo.appendChild(img)
-console.log(img)
+// console.log(img)
 
 // EX3 Change the text in the first and the last list item element in every unordered list element on this page. Change it to 'first' and 'last'.
 
-const ulElement = document.querySelectorAll("ul");
-ulElement.forEach(function(element) {
-    const firstListItem = ulElement.querySelector('li:first-child');
-    const lastListItem = ulElement.querySelector('li:last-child');
-    
-    
+const ulElements = document.querySelectorAll("#liste");
+ulElements.forEach(function(ulElements) {
+
+    let firstListItem = ulElements.querySelector("li:first-child");
+    let lastListItem = ulElements.querySelector("li:last-child");
+
+    firstListItem.textContent = "premier";
+    lastListItem.textContent = "dernier";
 });
+
+
+const cont = document.querySelector("#container");
+
+function isPrime(num) {
+    if (num <= 1){
+        return false;
+    }if (num === 2){
+        return true;
+    }
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0){
+        return false;
+    }
+    return true;
+  }
+
+
+  for (let i = 1; i <= 100; i++) {
+    const number = document.createElement("div");
+    number.textContent = i;
+
+    if (i % 2 === 0) {
+      number.classList.add("number", "even");
+    } else {
+      number.classList.add("number", "odd");
+    }
+
+    if (isPrime(i)) {
+      number.classList.add("prime");
+    }
+
+    container.appendChild(number);
