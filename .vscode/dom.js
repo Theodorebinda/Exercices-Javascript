@@ -7,6 +7,8 @@ const deuxiemeBloc = document.querySelector("#deuxiemeBloc");
 const TroisiemeBloc = document.querySelector("#TroisiemeBloc");
 const quatriemeBloc = document.querySelector("#quatriemBloc");
 const cinquiemeBloc = document.querySelector("#cinquiemeBloc");
+const buttonStyle = document.querySelector("jsstyle");
+
 
 titre.innerHTML = "EXERCICES JAVASCRIPT";
 instruction.innerHTML = "Veillez Utiliser la console du navigateur pour voir les resultats associer aux Exercices";
@@ -16,6 +18,7 @@ TroisiemeBloc.innerHTML = "Troisiemes Parties <br> sur index.js";
 quatriemeBloc.innerHTML = "Quatrieme  Parties <br> sur index.js";
 cinquiemeBloc.innerHTML = "Cinquieme  Parties <br> sur index.js";
 
+//Gestion de style avec DOM
 
 // console.log(premierBloc);
 
@@ -60,35 +63,39 @@ ulElements.forEach(function(ulElements) {
     lastListItem.textContent = "dernier";
 });
 
+// Ex5 Create a div container on HTML document and create 100 to 100 numbers dynamically and append to the container div.
+// Even numbers background is green
+// Odd numbers background is yellow
+// Prime numbers background is red
 
-const cont = document.querySelector("#container");
 
-function isPrime(num) {
-    if (num <= 1){
-        return false;
-    }if (num === 2){
+// selection de conteneur "div"
+const container= document.querySelector('#div');
+function isPrimeNbr(nbr){
+    if (nbr < 8 && (nbr=== 2 || nbr=== 3 ||nbr === 5 || nbr === 7) ){
+        return true
+    }
+    else if ( nbr > 8 && nbr % 2 !== 0 && !(nbr % 3 === 0 || nbr % 5 === 0 || nbr % 7 === 0)) {
         return true;
-    }
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-      if (num % i === 0){
-        return false;
-    }
-    return true;
-  }
-
-
-  for (let i = 1; i <= 100; i++) {
-    const number = document.createElement("div");
-    number.textContent = i;
-
-    if (i % 2 === 0) {
-      number.classList.add("number", "even");
     } else {
-      number.classList.add("number", "odd");
+      return  false;
     }
+}
+// puis créer une boucle qui ira de 0 à 100
+for(let i=0; i<=100; i++){
+    const paragraph = document.createElement('p');
+    paragraph.innerHTML = i;
+    paragraph.style.width = "30px";
+    paragraph.style.textAlign = "center";
 
-    if (isPrime(i)) {
-      number.classList.add("prime");
+if (i%2 === 0 && i !== 2){
+    paragraph.style.backgroundColor = 'green';
     }
-
-    container.appendChild(number);
+    else if(isPrimeNbr(i) ) {
+        paragraph.style.backgroundColor = 'red';
+    } else {
+        paragraph.style.backgroundColor = 'yellow';
+    }
+    container.appendChild(paragraph);
+}
+// pour chaque itération créer un p , qui contiendra le nombre
