@@ -110,15 +110,38 @@
 
 
 // Ex6 Write a JavaScript function to get the values of First and Last names of the following form.
-const label =  document.getElementById("label")
-function getFormvalue(e) {
-    // e.preventDefault();
-    let firstName = document.forms["form1"]["fname"].value;
-    let lastName = document.getElementById("form1").elements.namedItem("lname").value;
+// const label =  document.getElementById("label")
+// function getFormvalue(e) {
+//     // e.preventDefault();
+//     let firstName = document.forms["form1"]["fname"].value;
+//     let lastName = document.getElementById("form1").elements.namedItem("lname").value;
 
-    let result = alert("Welcom " + firstName + " " + lastName)
+//     let result = alert("Welcom " + firstName + " " + lastName)
     // console.log("Last name: " + firstName);
     // console.log("Last name: " + lastName);
-  }
+//   }
 
 //   getFormvalue()
+// Ex7 Modify the style of the paragraph text through javascript code. 
+// Clicking on the button the font, font size, and color of the paragraph text will be changed.
+
+
+
+// Ex8 Write a JavaScript function to get the value of the href, hreflang, rel, target, and type attributes of the specified link.
+
+function getLinkAttributes() {
+
+    let link = document.getElementById("w3r");
+    let href = link.getAttribute("href");
+    let hreflang = link.getAttribute("hreflang");
+    let rel = link.getAttribute("rel");
+    let target = link.getAttribute("target");
+    let type = link.getAttribute("type");
+  
+    console.log("href:", href);
+    console.log("hreflang:", hreflang);
+    console.log("rel:", rel);
+    console.log("target:", target);
+    console.log("type:", type);
+  }
+  getLinkAttributes()
